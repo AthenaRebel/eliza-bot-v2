@@ -37,9 +37,9 @@ def genList(itr):
 
 @bot.event
 async def on_ready():
-    # change bot activity to "Watching Hamilton" :P
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,
-                                                        name='Hamilton on Disney+'))
+    # change bot activity to "Watching Voice Channels" :P
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.playing,
+                                                        name='Be Active!'))
     # find for a text channel named `bot` to defaultly output text
     # will keep track of bot channels for multiple guilds (servers)
     for channel in bot.get_all_channels():
